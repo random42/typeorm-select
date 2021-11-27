@@ -5,7 +5,8 @@
     "outDir": "build",
     "noImplicitAny": false,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "declaration": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules/**"]
