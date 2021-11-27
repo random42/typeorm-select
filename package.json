@@ -1,0 +1,25 @@
+{
+  "name": "typeorm-select",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "github:random42/typeorm-select",
+  "main": "build/index.js",
+  "scripts": {
+    "install": "tsc",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/node": "^16.11.10",
+    "prettier": "^2.5.0",
+    "typeorm": "^0.2.41",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "validator": "^13.7.0"
+  }
+}
