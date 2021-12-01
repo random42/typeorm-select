@@ -5,7 +5,7 @@
   "repository": "github:random42/typeorm-select",
   "main": "build/index.js",
   "scripts": {
-    "install": "tsc",
+    "postinstall": "tsc",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\""
   },
