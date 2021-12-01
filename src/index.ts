@@ -157,8 +157,8 @@ export class QueryBuilder<Entity> {
       } else if (isParam(token)) {
         return token;
       }
-    } else throw new Error(`Invalid token "${token}"`);
-    return '';
+    }
+    throw new Error(`Invalid token "${token}"`);
   }
 
   // alias for a given dot path relation, create it if it doesn't exist
@@ -240,7 +240,7 @@ export class QueryBuilder<Entity> {
   }
 }
 
-const find = <Entity>(
+const select = <Entity>(
   entityClass: EntityTarget<Entity>,
   query: Query,
   manager: EntityManager,
@@ -254,4 +254,4 @@ const find = <Entity>(
   return new QueryBuilder(qb, query, operations).build();
 }
 
-export default find;
+export default select;
