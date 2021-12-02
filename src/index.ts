@@ -91,14 +91,14 @@ const fixRelations = (obj) => {
   return x;
 };
 
-type Relation = string;
-type Param = string;
-type Op = string;
-type OpMap = Record<Op,string>
-type Where = Array<Relation | Param | Op | Where>;
-type Sort = 'ASC' | 'DESC';
+export type Relation = string;
+export type Param = string;
+export type Op = string;
+export type OpMap = Record<Op,string>
+export type Where = Array<Relation | Param | Op | Where>;
+export type Sort = 'ASC' | 'DESC';
 
-interface Query {
+export interface Query {
   where?: Where;
   params?: Record<string,any>;
   relations?: string[];
