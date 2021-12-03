@@ -130,7 +130,6 @@ export class QueryBuilder<Entity> {
     const { query } = this;
     if (query.where) {
       const sql = this.buildQuery(query.where);
-      console.error(sql)
       sql && this.qb.where(sql);
     }
     this.joinRelations();
@@ -191,7 +190,6 @@ export class QueryBuilder<Entity> {
       }
       const attr = this.getAliasedAttribute(r);
       const alias = this.getAlias(r);
-      console.error(attr, alias);
       if (this.relations[r]) {
         this.qb.leftJoinAndSelect(attr, alias);
       } else {
